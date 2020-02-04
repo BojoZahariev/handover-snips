@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+}
+
+.btnDiv {
+  margin-top: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+.mainBtn {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #222;
+  margin: 20px;
+  text-align: center;
+  line-height: 150px;
+  border-radius: 5px;
+}
