@@ -8,9 +8,6 @@ body {
   background-color: #78b9e7;
 }
 
-.main {
-}
-
 .btnDiv {
   margin-top: 40vh;
   display: flex;
@@ -25,4 +22,8 @@ body {
   text-align: center;
   line-height: 150px;
   border-radius: 5px;
+}
+
+#new {
+  display: none;
 }
