@@ -18,37 +18,83 @@
     </div>
 
     <div id="new">
-      <form id="colleaguesForm">
-        <p class="smallTitle">Security Handover Sheet <br />Britannia House</p>
-        <div class="top">
-          <p>
-            Date <br />
-            06/02/2020
-          </p>
+      <p class="smallTitle">Security Handover Sheet <br />Britannia House</p>
 
-          <p>
-            Shift <br />
-            <input class="radioShift" type="radio" name="shift" value="early" />5:45-18:00
-            <input class="radioShift" type="radio" name="shift" value="late" />18:00-00:30
-            <input class="radioShift" type="radio" name="shift" value="full" />05:30-00:30
-          </p>
+      <div class="top">
+        <p>
+          Date <br />
+          06/02/2020
+        </p>
 
-          <p>
-            Colleagues Off <br />
-            <input id="inputOff" type="text" placeholder="Names" class="inputs" />
-          </p>
+        <p>
+          Shift <br />
+          <input class="radioShift" type="radio" name="shift" value="early" checked />5:45-18:00
+          <input class="radioShift" type="radio" name="shift" value="late" />18:00-00:30
+          <input class="radioShift" type="radio" name="shift" value="full" />05:30-00:30
+        </p>
 
-          <p>
-            Colleagues On <br />
-            <input id="inputOn" type="text" placeholder="Names" class="inputs" />
-          </p>
-        </div>
-        <input id="input1" type="text" placeholder="First Name" class="inputs" />
+        <p>
+          Colleagues Off <br />
+          <input id="inputOff" type="text" placeholder="Names" class="inputs" />
+        </p>
 
-        <button id="colleaguesSubmit" type="submit" class="submitBtn">SUBMIT</button>
-      </form>
+        <p>
+          Colleagues On <br />
+          <input id="inputOn" type="text" placeholder="Names" class="inputs" />
+        </p>
+      </div>
 
-      <p id="test">sssssss</p>
+      <div class="incidentsDiv">
+        <p id="incidents">
+          Any Incidents/Occurrences? <br />
+
+          No<input class="radioInc" id="incNo" type="radio" name="inc" value="incNo" checked /> Yes<input
+            class="radioInc"
+            id="incYes"
+            type="radio"
+            name="inc"
+            value="incYes"
+          />
+          <textarea id="textInc" rows="4" cols="100" placeholder="Your text here"></textarea>
+        </p>
+      </div>
+
+      <div class="incidentsDiv">
+        <p id="fire">
+          Fire Panel Status: Any faults or disabled areas? <br />
+          No <input class="radioFire" type="radio" name="fire" value="fireOk" checked /> Yes
+          <input class="radioFire" type="radio" name="fire" value="fireFault" />
+          <textarea id="textFire" rows="4" cols="100" placeholder="Your text here"></textarea>
+        </p>
+      </div>
+
+      <div class="incidentsDiv">
+        <p id="keys">
+          Are all keys in the Key Box? <br />
+          Yes <input class="radioKeys" type="radio" name="keys" value="keysOk" checked /> No <input class="radioKeys" type="radio" name="keys" value="keysNo" />
+          <textarea id="textKeys" rows="4" cols="100" placeholder="Please enter missing keys"></textarea>
+        </p>
+      </div>
+
+      <div class="incidentsDiv">
+        <p id="cams">
+          Cameras working normally? <br />
+          Yes <input class="radioCams" type="radio" name="cams" value="camsOk" checked /> No <input class="radioCams" type="radio" name="cams" value="camsNo" />
+          <textarea id="textCams" rows="4" cols="100" placeholder="Describe CCTV faults"></textarea>
+        </p>
+      </div>
+
+      <div class="incidentsDiv">
+        <p id="act">
+          ACT working normally? <br />
+          Yes <input class="radioAct" type="radio" name="act" value="camsOk" checked /> No <input class="radioAct" type="radio" name="act" value="camsNo" />
+          <textarea id="textAct" rows="4" cols="100" placeholder="Describe ACT faults"></textarea>
+        </p>
+      </div>
+
+      <input id="input1" type="text" placeholder="Your Name" class="inputs" />
+
+      <button id="formSubmit" class="submitBtn">SUBMIT</button>
     </div>
     <p id="backBtn">back</p>
     <script src="./script.js"></script>

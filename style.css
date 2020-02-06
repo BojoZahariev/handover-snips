@@ -40,6 +40,24 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  padding: 20px;
+}
+
+.incidentsDiv {
+  text-align: center;
+  padding: 20px;
+}
+
+textarea {
+  margin: 10px auto;
+}
+
+#textInc,
+#textFire,
+#textKeys,
+#textCams,
+#act {
+  display: none;
 }
 
 .submitBtn {
