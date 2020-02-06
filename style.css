@@ -26,9 +26,20 @@ body {
 
 #new {
   display: none;
-  background-color: #fff;
+  background-color: #ece4b7;
+  border: 1px solid #222;
   width: 90%;
   margin: 10px auto;
+}
+
+.smallTitle {
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .submitBtn {

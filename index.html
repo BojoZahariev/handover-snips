@@ -19,7 +19,31 @@
 
     <div id="new">
       <form id="colleaguesForm">
-        <input id="input1" type="text" placeholder="First Name" class="inputs" autofocus />
+        <p class="smallTitle">Security Handover Sheet <br />Britannia House</p>
+        <div class="top">
+          <p>
+            Date <br />
+            06/02/2020
+          </p>
+
+          <p>
+            Shift <br />
+            <input class="radioShift" type="radio" name="shift" value="early" />5:45-18:00
+            <input class="radioShift" type="radio" name="shift" value="late" />18:00-00:30
+            <input class="radioShift" type="radio" name="shift" value="full" />05:30-00:30
+          </p>
+
+          <p>
+            Colleagues Off <br />
+            <input id="inputOff" type="text" placeholder="Names" class="inputs" />
+          </p>
+
+          <p>
+            Colleagues On <br />
+            <input id="inputOn" type="text" placeholder="Names" class="inputs" />
+          </p>
+        </div>
+        <input id="input1" type="text" placeholder="First Name" class="inputs" />
 
         <button id="colleaguesSubmit" type="submit" class="submitBtn">SUBMIT</button>
       </form>
