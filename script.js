@@ -9,6 +9,7 @@ const textFire = document.querySelector('#textFire');
 const textKeys = document.querySelector('#textKeys');
 const textCams = document.querySelector('#textCams');
 const textAct = document.querySelector('#textAct');
+const textDoors = document.querySelector('#textDoors');
 
 const submitBtn = document.querySelector('#formSubmit');
 const input = document.querySelector('#input1');
@@ -23,68 +24,31 @@ backBtn.addEventListener('click', e => {
   newForm.style.display = 'none';
 });
 
-var radiosInc = document.getElementsByClassName('radioInc');
-for (let i = 0; i < radiosInc.length; i++) {
-  radiosInc[i].onclick = function() {
-    if (this.value === 'incYes') {
-      textInc.style.display = 'block';
-    } else {
-      textInc.style.display = 'none';
-    }
-  };
-}
+//Display textarea if different radio is pressed
+const displayTextArea = (radios, textDiv) => {
+  for (let i = 0; i < radios.length; i++) {
+    radios[i].onclick = function() {
+      if (this.value === 'No') {
+        textDiv.style.display = 'block';
+      } else {
+        textDiv.style.display = 'none';
+      }
+    };
+  }
+};
 
-var radiosFire = document.getElementsByClassName('radioFire');
-for (let i = 0; i < radiosFire.length; i++) {
-  radiosFire[i].onclick = function() {
-    if (this.value === 'fireFault') {
-      textFire.style.display = 'block';
-    } else {
-      textFire.style.display = 'none';
-    }
-  };
-}
-
-var radiosKeys = document.getElementsByClassName('radioKeys');
-for (let i = 0; i < radiosKeys.length; i++) {
-  radiosKeys[i].onclick = function() {
-    if (this.value === 'keysNo') {
-      textKeys.style.display = 'block';
-    } else {
-      textKeys.style.display = 'none';
-    }
-  };
-}
-
-var radiosCams = document.getElementsByClassName('radioCams');
-for (let i = 0; i < radiosCams.length; i++) {
-  radiosCams[i].onclick = function() {
-    if (this.value === 'camsNo') {
-      textCams.style.display = 'block';
-    } else {
-      textCams.style.display = 'none';
-    }
-  };
-}
-
-var radiosAct = document.getElementsByClassName('radioAct');
-for (let i = 0; i < radiosAct.length; i++) {
-  radiosAct[i].onclick = function() {
-    if (this.value === 'camsNo') {
-      textAct.style.display = 'block';
-    } else {
-      textAct.style.display = 'none';
-    }
-  };
-}
-
-/*
-if (document.getElementById('gender_Male').checked) {
-  //Male radio button is checked
-} else if (document.getElementById('gender_Female').checked) {
-  //Female radio button is checked
-}
-*/
+const radiosInc = document.getElementsByClassName('radioInc');
+displayTextArea(radiosInc, textInc);
+const radiosFire = document.getElementsByClassName('radioFire');
+displayTextArea(radiosFire, textFire);
+const radiosKeys = document.getElementsByClassName('radioKeys');
+displayTextArea(radiosKeys, textKeys);
+const radiosCams = document.getElementsByClassName('radioCams');
+displayTextArea(radiosCams, textCams);
+const radiosAct = document.getElementsByClassName('radioAct');
+displayTextArea(radiosAct, textAct);
+const radiosDoors = document.getElementsByClassName('radioDoors');
+displayTextArea(radiosDoors, textDoors);
 
 //USE for reception
 submitBtn.addEventListener('click', e => {

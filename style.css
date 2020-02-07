@@ -56,7 +56,8 @@ textarea {
 #textFire,
 #textKeys,
 #textCams,
-#act {
+#textAct,
+#textDoors {
   display: none;
 }
 
