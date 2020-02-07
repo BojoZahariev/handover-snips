@@ -23,13 +23,13 @@
       <div class="top">
         <p>
           Date <br />
-          06/02/2020
+          <span id="date">06/02/2020</span>
         </p>
 
         <p>
           Shift <br />
           <input class="radioShift" type="radio" name="shift" value="early" checked />5:45-18:00
-          <input class="radioShift" type="radio" name="shift" value="late" />18:00-00:30
+          <input class="radioShift" type="radio" name="shift" value="late" />16:30-00:30
           <input class="radioShift" type="radio" name="shift" value="full" />05:30-00:30
         </p>
 
@@ -39,12 +39,12 @@
         </p>
 
         <p>
-          Colleagues On <br />
-          <input id="inputOn" type="text" placeholder="Names" class="inputs" />
+          Colleague On <br />
+          <input id="inputOn" type="text" placeholder="Name" class="inputs" />
         </p>
       </div>
 
-      <div class="incidentsDiv">
+      <div class="radioDiv">
         <p id="incidents">
           Any Incidents/Occurrences? <br />
 
@@ -59,7 +59,7 @@
         </p>
       </div>
 
-      <div class="incidentsDiv">
+      <div class="radioDiv">
         <p id="fire">
           Fire Panel Status: Any faults or disabled areas? <br />
           No <input class="radioFire" type="radio" name="fire" value="Ok" checked /> Yes
@@ -68,7 +68,7 @@
         </p>
       </div>
 
-      <div class="incidentsDiv">
+      <div class="radioDiv">
         <p id="keys">
           Are all keys in the Key Box? <br />
           Yes <input class="radioKeys" type="radio" name="keys" value="Ok" checked /> No <input class="radioKeys" type="radio" name="keys" value="No" />
@@ -76,7 +76,7 @@
         </p>
       </div>
 
-      <div class="incidentsDiv">
+      <div class="radioDiv">
         <p id="cams">
           Cameras working normally? <br />
           Yes <input class="radioCams" type="radio" name="cams" value="Ok" checked /> No <input class="radioCams" type="radio" name="cams" value="No" />
@@ -84,7 +84,7 @@
         </p>
       </div>
 
-      <div class="incidentsDiv">
+      <div class="radioDiv">
         <p id="act">
           ACT working normally? <br />
           Yes <input class="radioAct" type="radio" name="act" value="Ok" checked /> No <input class="radioAct" type="radio" name="act" value="No" />
@@ -92,7 +92,7 @@
         </p>
       </div>
 
-      <div class="incidentsDiv">
+      <div class="radioDiv">
         <p id="doors">
           All doors working normally? <br />
           Yes <input class="radioDoors" type="radio" name="doors" value="Ok" checked /> No
@@ -101,9 +101,46 @@
         </p>
       </div>
 
-      <input id="input1" type="text" placeholder="Your Name" class="inputs" />
+      <div class="radioDiv">
+        <p id="intBars">
+          All internal barriers working normally? <br />
+          Yes <input class="radioIntBars" type="radio" name="barriers" value="Ok" checked /> No
+          <input class="radioIntBars" type="radio" name="barriers" value="No" />
+          <textarea id="textIntBars" rows="4" cols="100" placeholder="Describe barriers faults."></textarea>
+        </p>
+      </div>
 
-      <button id="formSubmit" class="submitBtn">SUBMIT</button>
+      <div class="radioDiv">
+        <p id="extBars">
+          External barriers working normally? <br />
+          Yes <input class="radioExtBars" type="radio" name="extBarriers" value="Ok" checked /> No
+          <input class="radioExtBars" type="radio" name="extBarriers" value="No" />
+          <textarea id="textExtBars" rows="4" cols="100" placeholder="Describe barriers faults."></textarea>
+        </p>
+      </div>
+
+      <div class="radioDiv">
+        <p id="city">
+          Have all defects (if any) been reported to CITY FM? <br />
+          Yes <input class="radioCity" type="radio" name="city" value="Ok" checked /> No
+          <input class="radioCity" type="radio" name="city" value="No" />
+          <textarea id="textCity" rows="4" cols="100" placeholder="Describe defects."></textarea>
+        </p>
+      </div>
+
+      <div class="radioDiv">
+        <p id="comments">
+          Any additional comments? <br />
+          No <input class="radioCom" type="radio" name="comment" value="Ok" checked /> Yes
+          <input class="radioCom" type="radio" name="comment" value="No" />
+          <textarea id="textCom" rows="4" cols="100" placeholder="Write your comments here."></textarea>
+        </p>
+      </div>
+
+      <div class="signatureDiv">
+        <input id="signature" type="text" placeholder="Your Name" class="inputs" />
+        <button id="formSubmit" class="submitBtn">SUBMIT</button>
+      </div>
     </div>
     <p id="backBtn">back</p>
     <script src="./script.js"></script>
