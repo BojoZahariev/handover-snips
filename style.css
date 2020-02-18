@@ -6,6 +6,13 @@
 
 body {
   background-color: #78b9e7;
+  font-family: 'Roboto', sans-serif;
+}
+
+.smallTitle {
+  font-size: 25px;
+  padding: 10px;
+  border-bottom: 1px solid #222;
 }
 
 .inputs {
@@ -15,10 +22,9 @@ body {
   background-color: #fff;
   padding: 5px 5px;
   box-shadow: inset 0 3px 6px #0000001a;
-
   width: 200px;
   font-size: 18px;
-  margin: 10px;
+  margin: 5px;
 }
 
 .btnDiv {
@@ -43,6 +49,11 @@ body {
   border: 1px solid #222;
   width: 90%;
   margin: 10px auto;
+}
+
+#date {
+  position: absolute;
+  padding: 10px;
 }
 
 .smallTitle {
