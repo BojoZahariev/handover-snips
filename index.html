@@ -27,16 +27,17 @@
 
       <div class="top">
         <p>
-          Shift <br />
-          <input class="radioShift" type="radio" name="shift" value="early" checked />5:45-18:00
-          <input class="radioShift" type="radio" name="shift" value="late" />16:30-00:30
-          <input class="radioShift" type="radio" name="shift" value="full" />05:30-00:30
-        </p>
-
-        <p>
           Colleagues Off <br />
           <input id="inputOff" type="text" placeholder="Names" class="inputs" />
         </p>
+
+        <div>
+          <p class="sectionTitle">Shift</p>
+
+          <label class="radio"><input type="radio" name="shift" value="early" checked/>5:45-18:00 <span class="checkmark"></span></label>
+          <label class="radio"><input type="radio" name="shift" value="late"/>16:30-00:30 <span class="checkmark"></span></label>
+          <label class="radio"><input type="radio" name="shift" value="full"/>05:30-00:30 <span class="checkmark"></span></label>
+        </div>
 
         <p>
           Colleague On <br />
@@ -45,51 +46,43 @@
       </div>
 
       <div class="radioDiv">
-        <p id="incidents">
-          Any Incidents/Occurrences? <br />
+        <p class="sectionTitle">Any Incidents/Occurrences?</p>
 
-          No<input class="radioInc" id="incNo" type="radio" name="inc" value="Ok" checked /> Yes<input
-            class="radioInc"
-            id="incYes"
-            type="radio"
-            name="inc"
-            value="No"
-          />
-          <textarea id="textInc" rows="4" cols="100" placeholder="Describe Incidents/Occurrences."></textarea>
-        </p>
+        <label class="radio"><input id="incNo" type="radio" name="inc" value="Ok" checked/>No<span class="checkmark"></span></label>
+        <label class="radio"><input id="incYes" type="radio" name="inc" value="No"/>Yes<span class="checkmark"></span></label>
+        <textarea id="textInc" rows="4" cols="100" placeholder="Describe Incidents/Occurrences."></textarea>
       </div>
 
       <div class="radioDiv">
-        <p id="fire">
-          Fire Panel Status: Any faults or disabled areas? <br />
-          No <input class="radioFire" type="radio" name="fire" value="Ok" checked /> Yes
-          <input class="radioFire" type="radio" name="fire" value="No" />
-          <textarea id="textFire" rows="4" cols="100" placeholder="Describe Fire Panel faults."></textarea>
-        </p>
+        <p class="sectionTitle">Fire Panel Status: Any faults or disabled areas?</p>
+
+        <label class="radio"><input class="radioFire" type="radio" name="fire" value="Ok" checked/>No<span class="checkmark"></span></label>
+        <label class="radio"><input class="radioFire" type="radio" name="fire" value="No"/>Yes<span class="checkmark"></span></label>
+        <textarea id="textFire" rows="4" cols="100" placeholder="Describe Fire Panel faults."></textarea>
       </div>
 
       <div class="radioDiv">
-        <p id="keys">
-          Are all keys in the Key Box? <br />
-          Yes <input class="radioKeys" type="radio" name="keys" value="Ok" checked /> No <input class="radioKeys" type="radio" name="keys" value="No" />
-          <textarea id="textKeys" rows="4" cols="100" placeholder="Enter missing keys."></textarea>
-        </p>
+        <p class="sectionTitle">Are all keys in the Key Box?</p>
+
+        <label class="radio"><input class="radioKeys" type="radio" name="keys" value="Ok" checked />Yes<span class="checkmark"></span> </label>
+        <label class="radio"> <input class="radioKeys" type="radio" name="keys" value="No"/>No<span class="checkmark"></span></label>
+        <textarea id="textKeys" rows="4" cols="100" placeholder="Enter missing keys."></textarea>
       </div>
 
       <div class="radioDiv">
-        <p id="cams">
-          Cameras working normally? <br />
-          Yes <input class="radioCams" type="radio" name="cams" value="Ok" checked /> No <input class="radioCams" type="radio" name="cams" value="No" />
-          <textarea id="textCams" rows="4" cols="100" placeholder="Describe CCTV faults."></textarea>
-        </p>
+        <p class="sectionTitle">Cameras working normally?</p>
+
+        <label class="radio"><input class="radioCams" type="radio" name="cams" value="Ok" checked />Yes<span class="checkmark"></span> </label>
+        <label class="radio"><input class="radioCams" type="radio" name="cams" value="No"/>No<span class="checkmark"></span></label>
+        <textarea id="textCams" rows="4" cols="100" placeholder="Describe CCTV faults."></textarea>
       </div>
 
       <div class="radioDiv">
-        <p id="act">
-          ACT working normally? <br />
-          Yes <input class="radioAct" type="radio" name="act" value="Ok" checked /> No <input class="radioAct" type="radio" name="act" value="No" />
-          <textarea id="textAct" rows="4" cols="100" placeholder="Describe ACT faults."></textarea>
-        </p>
+        <p class="sectionTitle">ACT working normally?</p>
+
+        <label class="radio"><input class="radioAct" type="radio" name="act" value="Ok" checked/>Yes<span class="checkmark"></span></label>
+        <label class="radio"><input class="radioAct" type="radio" name="act" value="No"/>No<span class="checkmark"></span></label>
+        <textarea id="textAct" rows="4" cols="100" placeholder="Describe ACT faults."></textarea>
       </div>
 
       <div class="radioDiv">
