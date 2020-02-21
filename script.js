@@ -1,4 +1,9 @@
 const initialDiv = document.querySelector('#initialDiv');
+const handOverDiv = document.querySelector('#handOverDiv');
+const hoBtn = document.querySelector('#hoBtn');
+const patrolBtn = document.querySelector('#patrolBtn');
+
+//HANDOVER
 const newBtn = document.querySelector('#newBtn');
 const backBtn = document.querySelector('#backBtn');
 
@@ -38,14 +43,21 @@ const addZero = i => {
 
 date.textContent = dateFormat();
 
+hoBtn.addEventListener('click', e => {
+  initialDiv.style.display = 'none';
+  handOverDiv.style.display = 'block';
+});
+
 newBtn.addEventListener('click', e => {
   initialDiv.style.display = 'none';
+  handOverDiv.style.display = 'none';
   newForm.style.display = 'block';
 });
 
 backBtn.addEventListener('click', e => {
   initialDiv.style.display = 'block';
   newForm.style.display = 'none';
+  handOverDiv.style.display = 'none';
 });
 
 //Display textarea if different radio is pressed

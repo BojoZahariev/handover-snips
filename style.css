@@ -9,6 +9,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#handOverDiv {
+  display: none;
+}
+
 .smallTitle {
   font-size: 25px;
   padding: 10px;
