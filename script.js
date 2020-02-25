@@ -24,6 +24,7 @@ const textCom = document.querySelector('#textCom');
 const submitBtn = document.querySelector('#formSubmit');
 const input = document.querySelector('#input1');
 
+//get the date
 const dateFormat = () => {
   let dateObj = new Date();
   let month = addZero(dateObj.getMonth() + 1);
@@ -34,6 +35,7 @@ const dateFormat = () => {
   return issueDate;
 };
 
+//add zero if the date is < 10
 const addZero = i => {
   if (i < 10) {
     i = '0' + i;
