@@ -9,6 +9,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 #handOverDiv {
   display: none;
 }
@@ -85,6 +89,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 /* Hide the browser's default radio button */
