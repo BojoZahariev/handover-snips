@@ -1,15 +1,16 @@
 const initialDiv = document.querySelector('#initialDiv');
-const handOverDiv = document.querySelector('#handOverDiv');
+const handOverBtnDiv = document.querySelector('#handOverBtnDiv');
 const hoBtn = document.querySelector('#hoBtn');
 const patrolBtn = document.querySelector('#patrolBtn');
+const backBtn = document.querySelector('#backBtn');
 
 //HANDOVER
 const newBtn = document.querySelector('#newBtn');
-const backBtn = document.querySelector('#backBtn');
+const handOverCon = document.querySelector('#handOverCon');
 
 //New
 const date = document.querySelector('#date');
-const newForm = document.querySelector('#new');
+const newFormHo = document.querySelector('#newFormHo');
 const textInc = document.querySelector('#textInc');
 const textFire = document.querySelector('#textFire');
 const textKeys = document.querySelector('#textKeys');
@@ -47,19 +48,19 @@ date.textContent = dateFormat();
 
 hoBtn.addEventListener('click', e => {
   initialDiv.style.display = 'none';
-  handOverDiv.style.display = 'block';
+  handOverCon.style.display = 'block';
+  handOverBtnDiv.style.display = 'block';
 });
 
 newBtn.addEventListener('click', e => {
   initialDiv.style.display = 'none';
-  handOverDiv.style.display = 'none';
-  newForm.style.display = 'block';
+  handOverBtnDiv.style.display = 'none';
+  newFormHo.style.display = 'block';
 });
 
 backBtn.addEventListener('click', e => {
   initialDiv.style.display = 'block';
-  newForm.style.display = 'none';
-  handOverDiv.style.display = 'none';
+  handOverCon.style.display = 'none';
 });
 
 //Display textarea if different radio is pressed

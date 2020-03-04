@@ -19,7 +19,7 @@ h1 {
   padding-top: 20px;
 }
 
-#handOverDiv {
+#handOverCon {
   display: none;
 }
 
@@ -58,7 +58,7 @@ h1 {
   border-radius: 5px;
 }
 
-#new {
+#newFormHo {
   display: none;
   background-color: #ece4b7;
   border: 1px solid #222;
