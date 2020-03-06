@@ -13,13 +13,33 @@ h1 {
   text-align: center;
 }
 
+.forms {
+  position: relative;
+  background-color: #ece4b7;
+  border: 1px solid #222;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.lists {
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+textarea {
+  margin: 10px auto;
+}
+
 .daily,
 .yesterday {
   text-align: center;
   padding-top: 20px;
 }
 
-#handOverCon {
+#handOverCon,
+#patrolCon {
   display: none;
 }
 
@@ -60,14 +80,13 @@ h1 {
 
 #newFormHo {
   display: none;
-  background-color: #ece4b7;
-  border: 1px solid #222;
-  width: 90%;
-  margin: 10px auto;
 }
 
-#date {
+#date,
+#datePatrol {
   position: absolute;
+  top: 0;
+  left: 0;
   padding: 10px;
 }
 
@@ -131,10 +150,6 @@ h1 {
   padding: 20px;
 }
 
-textarea {
-  margin: 10px auto;
-}
-
 #textInc,
 #textFire,
 #textKeys,
@@ -144,7 +159,8 @@ textarea {
 #textIntBars,
 #textExtBars,
 #textCity,
-#textCom {
+#textCom,
+#textPatrol {
   display: none;
 }
 
@@ -180,4 +196,10 @@ textarea {
 
 .signatureDiv {
   text-align: center;
+}
+
+#backBtn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }

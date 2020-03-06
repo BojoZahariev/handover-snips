@@ -25,6 +25,11 @@ const textCom = document.querySelector('#textCom');
 const submitBtn = document.querySelector('#formSubmit');
 const input = document.querySelector('#input1');
 
+//Patrol
+const patrolCon = document.querySelector('#patrolCon');
+const datePatrol = document.querySelector('#datePatrol');
+const textPatrol = document.querySelector('#textPatrol');
+
 //get the date
 const dateFormat = () => {
   let dateObj = new Date();
@@ -48,8 +53,9 @@ date.textContent = dateFormat();
 
 hoBtn.addEventListener('click', e => {
   initialDiv.style.display = 'none';
+  newFormHo.style.display = 'none';
   handOverCon.style.display = 'block';
-  handOverBtnDiv.style.display = 'block';
+  handOverBtnDiv.style.display = 'flex';
 });
 
 newBtn.addEventListener('click', e => {
@@ -61,6 +67,8 @@ newBtn.addEventListener('click', e => {
 backBtn.addEventListener('click', e => {
   initialDiv.style.display = 'block';
   handOverCon.style.display = 'none';
+  handOverBtnDiv.style.display = 'none';
+  patrolCon.style.display = 'none';
 });
 
 //Display textarea if different radio is pressed
@@ -96,3 +104,15 @@ const radiosCity = document.getElementsByClassName('radioCity');
 displayTextArea(radiosCity, textCity);
 const radiosCom = document.getElementsByClassName('radioCom');
 displayTextArea(radiosCom, textCom);
+
+//PATROL
+patrolBtn.addEventListener('click', e => {
+  initialDiv.style.display = 'none';
+  handOverCon.style.display = 'none';
+  patrolCon.style.display = 'block';
+});
+
+datePatrol.textContent = dateFormat();
+
+const radiosPatrol = document.getElementsByClassName('radioPatrol');
+displayTextArea(radiosPatrol, textPatrol);

@@ -35,14 +35,12 @@
     </div>
 
     <div id="handOverCon">
-      <div id="handOverBtnDiv">
-        <div class="btnDiv">
-          <button id="newBtn" class="mainBtn">New Sheet</button>
-          <button id="lastBtn" class="mainBtn">See Last</button>
-        </div>
+      <div id="handOverBtnDiv" class="btnDiv">
+        <button id="newBtn" class="mainBtn">New Sheet</button>
+        <button id="lastBtn" class="mainBtn">See Last</button>
       </div>
 
-      <div id="newFormHo">
+      <div id="newFormHo" class="forms">
         <p>
           <span id="date">06/02/2020</span>
         </p>
@@ -154,6 +152,26 @@
           <button id="formSubmit" class="submitBtn">SUBMIT</button>
         </div>
       </div>
+    </div>
+
+    <!-- PATROL-->
+    <div id="patrolCon">
+      <form class="forms">
+        <span id="datePatrol"></span>
+        <label class="radio"><input class="radioPatrol" id="patrolOK" type="radio" name="patrol" value="Ok" checked/>OK<span class="checkmark"></span></label>
+        <label class="radio"><input class="radioPatrol" id="patrolNo" type="radio" name="patrol" value="No"/>Not OK<span class="checkmark"></span></label>
+        <textarea id="textPatrol" class="inline" rows="5" cols="40" placeholder="Describe problems."></textarea>
+        <label>Security Officer<input id="inputOn" type="text" placeholder="Name" class="inputs"/></label>
+        <button id="patrolFormSubmit" class="submitBtn">SUBMIT</button>
+      </form>
+
+      <ul class="lists">
+        <li><span>05/03/2020</span> <span>OK</span> <span>11.00</span><span> Bojo</span></li>
+        <li><span>05/03/2020</span> <span>OK</span> <span>11.00</span><span> Bojo</span></li>
+        <li><span>05/03/2020</span> <span>OK</span> <span>11.00</span><span> Bojo</span></li>
+        <li><span>05/03/2020</span> <span>OK</span> <span>11.00</span><span> Bojo</span></li>
+        <li><span>05/03/2020</span> <span>OK</span> <span>11.00</span><span> Bojo</span></li>
+      </ul>
     </div>
     <p id="backBtn">back</p>
     <script src="./script.js"></script>
