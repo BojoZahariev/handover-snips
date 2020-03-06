@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+   
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Handover Sheet</title>
@@ -45,7 +46,7 @@
           <span id="date">06/02/2020</span>
         </p>
 
-        <p class="smallTitle">Security Handover Sheet <br />Britannia House</p>
+        <p class="smallTitle">Security Handover Sheet</p>
 
         <div class="top">
           <p>
@@ -156,14 +157,33 @@
 
     <!-- PATROL-->
     <div id="patrolCon">
-      <form class="forms">
+      <p class="smallTitle">Daily Fire checks</p>
+      <h4>This form is to be completed by the fire monitor or appointed person only.</h2>
+      <h3>Ensure:</h3>
+
+      <ul>
+        <li>All fire escape doors have been unlocked.</li>
+        <li>All internal fire escape exits, passageways (including gangways) and staircases are clear.</li>
+        <li>Take a perimeter walk of the building to ensure that all external fire exit doorways, passageways and staircases are clear.</li>
+        <li>All waste and salvage is properly stored/contained.</li>
+        <li>No cardboard or plastic is stored outside the store during non-trading hours.</li>
+        <li>There are no signs of smoking on the premises.</li>
+        <li>Check the Fire Alarm panel ensuring no faults are displayed.</li>
+      </ul>
+
+      <form class="forms flexForm" >
         <span id="datePatrol"></span>
-        <label class="radio"><input class="radioPatrol" id="patrolOK" type="radio" name="patrol" value="Ok" checked/>OK<span class="checkmark"></span></label>
-        <label class="radio"><input class="radioPatrol" id="patrolNo" type="radio" name="patrol" value="No"/>Not OK<span class="checkmark"></span></label>
+        <div>
+          <span class="question">Everything OK?</span>
+        <label class="radio"><input class="radioPatrol" id="patrolOK" type="radio" name="patrol" value="Ok" checked/>Yes<span class="checkmark"></span></label>
+        <label class="radio"><input class="radioPatrol" id="patrolNo" type="radio" name="patrol" value="No"/>No<span class="checkmark"></span></label>
+      </div>
         <textarea id="textPatrol" class="inline" rows="5" cols="40" placeholder="Describe problems."></textarea>
         <label>Security Officer<input id="inputOn" type="text" placeholder="Name" class="inputs"/></label>
         <button id="patrolFormSubmit" class="submitBtn">SUBMIT</button>
       </form>
+
+      <p>Any issues that do not meet the required standards are to be recorded and acted on accordingly.</p>
 
       <ul class="lists">
         <li><span>05/03/2020</span> <span>OK</span> <span>11.00</span><span> Bojo</span></li>

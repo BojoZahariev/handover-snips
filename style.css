@@ -22,6 +22,12 @@ h1 {
   text-align: center;
 }
 
+.flexForm {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 .lists {
   margin: 10px auto;
   width: 100%;
@@ -82,8 +88,7 @@ textarea {
   display: none;
 }
 
-#date,
-#datePatrol {
+#date {
   position: absolute;
   top: 0;
   left: 0;
@@ -166,6 +171,7 @@ textarea {
 
 .submitBtn {
   display: inline-block;
+  max-height: 43px;
   padding: 8px 10px;
   margin-left: 20px;
   background-color: #ffc220;
@@ -202,4 +208,15 @@ textarea {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+#patrolCon {
+  text-align: center;
+}
+
+#datePatrol {
+  padding: 10px;
+}
+
+.question {
+  padding: 0px 20px;
 }
