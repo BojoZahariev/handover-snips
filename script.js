@@ -1,7 +1,9 @@
+const bigContainer = document.querySelector('#bigContainer');
 const initialDiv = document.querySelector('#initialDiv');
 const handOverBtnDiv = document.querySelector('#handOverBtnDiv');
 const hoBtn = document.querySelector('#hoBtn');
 const patrolBtn = document.querySelector('#patrolBtn');
+const keysBtn = document.querySelector('#keysBtn');
 const backBtn = document.querySelector('#backBtn');
 
 //HANDOVER
@@ -30,6 +32,9 @@ const patrolCon = document.querySelector('#patrolCon');
 const datePatrol = document.querySelector('#datePatrol');
 const textPatrol = document.querySelector('#textPatrol');
 
+//Keys
+const keysCon = document.querySelector('#keysCon');
+
 //get the date
 const dateFormat = () => {
   let dateObj = new Date();
@@ -52,24 +57,27 @@ const addZero = i => {
 date.textContent = dateFormat();
 
 hoBtn.addEventListener('click', e => {
-  initialDiv.style.display = 'none';
-  newFormHo.style.display = 'none';
+  clearScreen();
   handOverCon.style.display = 'block';
   handOverBtnDiv.style.display = 'flex';
 });
 
 newBtn.addEventListener('click', e => {
-  initialDiv.style.display = 'none';
-  handOverBtnDiv.style.display = 'none';
+  clearScreen();
   newFormHo.style.display = 'block';
 });
 
 backBtn.addEventListener('click', e => {
+  clearScreen();
   initialDiv.style.display = 'block';
-  handOverCon.style.display = 'none';
-  handOverBtnDiv.style.display = 'none';
-  patrolCon.style.display = 'none';
 });
+
+const clearScreen = () => {
+  let containers = document.getElementsByClassName('containers');
+  Array.from(containers).forEach(element => {
+    element.style.display = 'none';
+  });
+};
 
 //Display textarea if different radio is pressed
 const displayTextArea = (radios, textDiv) => {
@@ -107,8 +115,7 @@ displayTextArea(radiosCom, textCom);
 
 //PATROL
 patrolBtn.addEventListener('click', e => {
-  initialDiv.style.display = 'none';
-  handOverCon.style.display = 'none';
+  clearScreen();
   patrolCon.style.display = 'block';
 });
 
@@ -116,3 +123,11 @@ datePatrol.textContent = dateFormat();
 
 const radiosPatrol = document.getElementsByClassName('radioPatrol');
 displayTextArea(radiosPatrol, textPatrol);
+
+//KEYS
+keysBtn.addEventListener('click', e => {
+  clearScreen();
+  keysCon.style.display = 'block';
+});
+
+dateKeys.textContent = dateFormat();

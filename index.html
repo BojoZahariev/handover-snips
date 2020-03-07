@@ -11,7 +11,8 @@
     <title>Handover Sheet</title>
   </head>
   <body>
-    <div id="initialDiv">
+    <div id="bigContainer">
+    <div id="initialDiv" class="containers">
       <h1>SECURITY PORTAL</h1>
 
       <div class="daily">
@@ -35,7 +36,7 @@
       </div>
     </div>
 
-    <div id="handOverCon">
+    <div id="handOverCon" class="containers">
       <div id="handOverBtnDiv" class="btnDiv">
         <button id="newBtn" class="mainBtn">New Sheet</button>
         <button id="lastBtn" class="mainBtn">See Last</button>
@@ -156,7 +157,7 @@
     </div>
 
     <!-- PATROL-->
-    <div id="patrolCon">
+    <div id="patrolCon" class="containers">
       <p class="smallTitle">Daily Fire checks</p>
       <h4>This form is to be completed by the fire monitor or appointed person only.</h2>
       <h3>Ensure:</h3>
@@ -179,7 +180,7 @@
         <label class="radio"><input class="radioPatrol" id="patrolNo" type="radio" name="patrol" value="No"/>No<span class="checkmark"></span></label>
       </div>
         <textarea id="textPatrol" class="inline" rows="5" cols="40" placeholder="Describe problems."></textarea>
-        <label>Security Officer<input id="inputOn" type="text" placeholder="Name" class="inputs"/></label>
+        <label>Security Officer<input id="inputFire" type="text" placeholder="Name" class="inputs"/></label>
         <button id="patrolFormSubmit" class="submitBtn">SUBMIT</button>
       </form>
 
@@ -193,7 +194,28 @@
         <li><span>05/03/2020</span> <span>OK</span> <span>11.00</span><span> Bojo</span></li>
       </ul>
     </div>
+
+    <!-- KEYS-->
+    <div id="keysCon" class="containers">
+      <p class="smallTitle">Daily Fire checks</p>
+     
+      <form class="forms flexForm" >
+        <span id="dateKeys"></span>
+        <input id="inputKeysName" type="text" placeholder="Name" class="inputs"/>
+        <input id="inputKeysKey" type="text" placeholder="Key No" class="inputs"/>
+        <button id="keysFormSubmit" class="submitBtn">SUBMIT</button>
+      </form>
+
+      <ul class="lists">
+        <li><span>05/03/2020</span> <span>Denise</span> <span>11.00</span><span>not returned</span><span> Bojo</span></li>
+        <li><span>04/03/2020</span> <span>Denise</span> <span>12.00</span><span>returned at 12.30</span><span> Bojo</span></li>
+      
+      </ul>
+      
+    </div>
+  </div>
     <p id="backBtn">back</p>
+
     <script src="./script.js"></script>
   </body>
 </html>
