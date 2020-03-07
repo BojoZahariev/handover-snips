@@ -4,6 +4,7 @@ const handOverBtnDiv = document.querySelector('#handOverBtnDiv');
 const hoBtn = document.querySelector('#hoBtn');
 const patrolBtn = document.querySelector('#patrolBtn');
 const keysBtn = document.querySelector('#keysBtn');
+const childrenBtn = document.querySelector('#childrenBtn');
 const backBtn = document.querySelector('#backBtn');
 
 //HANDOVER
@@ -35,6 +36,9 @@ const textPatrol = document.querySelector('#textPatrol');
 //Keys
 const keysCon = document.querySelector('#keysCon');
 
+//Children
+const childrenCon = document.querySelector('#childrenCon');
+
 //get the date
 const dateFormat = () => {
   let dateObj = new Date();
@@ -58,12 +62,14 @@ date.textContent = dateFormat();
 
 hoBtn.addEventListener('click', e => {
   clearScreen();
-  handOverCon.style.display = 'block';
+
   handOverBtnDiv.style.display = 'flex';
 });
 
 newBtn.addEventListener('click', e => {
   clearScreen();
+
+  handOverCon.style.display = 'block';
   newFormHo.style.display = 'block';
 });
 
@@ -77,6 +83,7 @@ const clearScreen = () => {
   Array.from(containers).forEach(element => {
     element.style.display = 'none';
   });
+  handOverBtnDiv.style.display = 'none';
 };
 
 //Display textarea if different radio is pressed
@@ -131,3 +138,11 @@ keysBtn.addEventListener('click', e => {
 });
 
 dateKeys.textContent = dateFormat();
+
+//CHILDREN
+childrenBtn.addEventListener('click', e => {
+  clearScreen();
+  childrenCon.style.display = 'block';
+});
+
+dateChildren.textContent = dateFormat();

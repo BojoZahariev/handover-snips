@@ -44,9 +44,11 @@ textarea {
   padding-top: 20px;
 }
 
+#handOverBtnDiv,
 #handOverCon,
 #patrolCon,
-#keysCon {
+#keysCon,
+#childrenCon {
   display: none;
 }
 
@@ -214,8 +216,7 @@ textarea {
   text-align: center;
 }
 
-#datePatrol,
-#dateKeys {
+.date {
   padding: 10px;
 }
 
