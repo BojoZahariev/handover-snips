@@ -13,6 +13,11 @@ h1 {
   text-align: center;
 }
 
+ol {
+  list-style-type: decimal;
+  padding-left: 40px;
+}
+
 .forms {
   position: relative;
   background-color: #ece4b7;
