@@ -53,7 +53,8 @@ textarea {
 #handOverCon,
 #patrolCon,
 #keysCon,
-#childrenCon {
+#childrenCon,
+#laptopCon {
   display: none;
 }
 
