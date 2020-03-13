@@ -30,7 +30,7 @@
           <button id="keysBtn" class="mainBtn">Keys</button>
           <button id="childrenBtn" class="mainBtn">Children on site</button>
           <button id="laptopBtn" class="mainBtn">Laptops</button>
-          <button id="carparkBtn" class="mainBtn">Car Park Patrols</button>
+          <button id="carParkBtn" class="mainBtn">Car Park Patrols</button>
           <button id="archiveBtn" class="mainBtn">Archive</button>
         </div>
       </div>
@@ -289,6 +289,28 @@
             </label>
             <label class="radio"> <input class="radioLaptop" id="managerNo" type="radio" name="laptop" value="No"/>No<span class="checkmark"></span></label>
           </div>
+          <button id="laptopFormSubmit" class="submitBtn">SUBMIT</button>
+        </form>
+      </div>
+
+      <!-- CAR PARK-->
+      <div id="carParkCon" class="containers">
+        <p class="smallTitle">Car Park Check Sheet</p>
+
+        <form class="forms flexForm">
+          <span id="dateCarPark" class="date"></span>
+          <input id="inputCarPark1" type="text" placeholder="Name" class="inputs" />
+          <input id="inputCarPark2" type="text" placeholder="Vehicle reg." class="inputs" />
+          <div>
+            <span class="question">Contacted?</span>
+            <label class="radio">
+              <input class="radioCarPark" id="contactedOK" type="radio" name="car park" value="Ok" checked />Yes<span class="checkmark"></span>
+            </label>
+            <label class="radio">
+              <input class="radioCarPark" id="contactedNo" type="radio" name="car park" value="No"/>No<span class="checkmark"></span
+            ></label>
+          </div>
+          <input id="inputCarPark3" type="text" placeholder="Reason" class="inputs" />
           <button id="laptopFormSubmit" class="submitBtn">SUBMIT</button>
         </form>
       </div>

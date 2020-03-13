@@ -6,6 +6,7 @@ const patrolBtn = document.querySelector('#patrolBtn');
 const keysBtn = document.querySelector('#keysBtn');
 const childrenBtn = document.querySelector('#childrenBtn');
 const laptopBtn = document.querySelector('#laptopBtn');
+const carParkBtn = document.querySelector('#carParkBtn');
 const backBtn = document.querySelector('#backBtn');
 
 //HANDOVER
@@ -42,6 +43,10 @@ const childrenCon = document.querySelector('#childrenCon');
 
 //Laptop
 const laptopCon = document.querySelector('#laptopCon');
+
+//Car Park
+const carParkCon = document.querySelector('#carParkCon');
+const dateCarPark = document.querySelector('#dateCarPark');
 
 //get the date
 const dateFormat = () => {
@@ -151,10 +156,18 @@ childrenBtn.addEventListener('click', e => {
 
 dateChildren.textContent = dateFormat();
 
-//CHILDREN
+//LAPTOP
 laptopBtn.addEventListener('click', e => {
   clearScreen();
   laptopCon.style.display = 'block';
 });
 
 dateLaptop.textContent = dateFormat();
+
+//CARPARK
+carParkBtn.addEventListener('click', e => {
+  clearScreen();
+  carParkCon.style.display = 'block';
+});
+
+dateCarPark.textContent = dateFormat();
