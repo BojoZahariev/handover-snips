@@ -14,7 +14,7 @@ const newBtn = document.querySelector('#newBtn');
 const handOverCon = document.querySelector('#handOverCon');
 
 //New
-const date = document.querySelector('#date');
+const dateHo = document.querySelector('#dateHo');
 const newFormHo = document.querySelector('#newFormHo');
 const textInc = document.querySelector('#textInc');
 const textFire = document.querySelector('#textFire');
@@ -37,12 +37,15 @@ const textPatrol = document.querySelector('#textPatrol');
 
 //Keys
 const keysCon = document.querySelector('#keysCon');
+const dateKeys = document.querySelector('#dateKeys');
 
 //Children
 const childrenCon = document.querySelector('#childrenCon');
+const dateChildren = document.querySelector('#dateChildren');
 
 //Laptop
 const laptopCon = document.querySelector('#laptopCon');
+const dateLaptop = document.querySelector('#dateLaptop');
 
 //Car Park
 const carParkCon = document.querySelector('#carParkCon');
@@ -67,7 +70,7 @@ const addZero = i => {
   return i;
 };
 
-date.textContent = dateFormat();
+dateHo.textContent = dateFormat();
 
 hoBtn.addEventListener('click', e => {
   clearScreen();
