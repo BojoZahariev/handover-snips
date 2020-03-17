@@ -37,6 +37,22 @@ ol {
   padding-left: 40px;
 }
 
+#backBtn {
+  width: 100px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+
+  transform: scaleX(-1);
+  transition: all 0.3s;
+  z-index: 999;
+}
+
+#backBtn:hover {
+  left: 0;
+}
+
 .forms {
   position: relative;
   background-color: #ece4b7;
@@ -112,7 +128,7 @@ textarea {
   overflow: hidden;
   line-height: 130px;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
   cursor: pointer;
   user-select: none;
@@ -124,7 +140,7 @@ textarea {
 }
 
 .mainBtn:hover {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .mainBtn:active {
@@ -256,11 +272,6 @@ textarea {
   text-align: center;
 }
 
-#backBtn {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
 #patrolCon {
   text-align: center;
 }
