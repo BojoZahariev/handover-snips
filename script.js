@@ -76,6 +76,7 @@ hoBtn.addEventListener('click', e => {
   clearScreen();
 
   handOverBtnDiv.style.display = 'flex';
+  backBtn.style.display = 'block';
 });
 
 newBtn.addEventListener('click', e => {
@@ -83,6 +84,7 @@ newBtn.addEventListener('click', e => {
 
   handOverCon.style.display = 'block';
   newFormHo.style.display = 'block';
+  backBtn.style.display = 'block';
 });
 
 backBtn.addEventListener('click', e => {
@@ -96,6 +98,7 @@ const clearScreen = () => {
     element.style.display = 'none';
   });
   handOverBtnDiv.style.display = 'none';
+  backBtn.style.display = 'none';
 };
 
 //Display textarea if different radio is pressed
@@ -136,6 +139,7 @@ displayTextArea(radiosCom, textCom);
 patrolBtn.addEventListener('click', e => {
   clearScreen();
   patrolCon.style.display = 'block';
+  backBtn.style.display = 'block';
 });
 
 datePatrol.textContent = dateFormat();
@@ -147,6 +151,7 @@ displayTextArea(radiosPatrol, textPatrol);
 keysBtn.addEventListener('click', e => {
   clearScreen();
   keysCon.style.display = 'block';
+  backBtn.style.display = 'block';
 });
 
 dateKeys.textContent = dateFormat();
@@ -155,6 +160,7 @@ dateKeys.textContent = dateFormat();
 childrenBtn.addEventListener('click', e => {
   clearScreen();
   childrenCon.style.display = 'block';
+  backBtn.style.display = 'block';
 });
 
 dateChildren.textContent = dateFormat();
@@ -163,6 +169,7 @@ dateChildren.textContent = dateFormat();
 laptopBtn.addEventListener('click', e => {
   clearScreen();
   laptopCon.style.display = 'block';
+  backBtn.style.display = 'block';
 });
 
 dateLaptop.textContent = dateFormat();
@@ -171,6 +178,7 @@ dateLaptop.textContent = dateFormat();
 carParkBtn.addEventListener('click', e => {
   clearScreen();
   carParkCon.style.display = 'block';
+  backBtn.style.display = 'block';
 });
 
 dateCarPark.textContent = dateFormat();

@@ -43,7 +43,7 @@ ol {
   bottom: 10px;
   left: 10px;
   cursor: pointer;
-
+  display: none;
   transform: scaleX(-1);
   transition: all 0.3s;
   z-index: 999;
