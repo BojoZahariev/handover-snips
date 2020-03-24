@@ -4,7 +4,6 @@ const handOverBtnDiv = document.querySelector('#handOverBtnDiv');
 const hoBtn = document.querySelector('#hoBtn');
 const patrolBtn = document.querySelector('#patrolBtn');
 const keysBtn = document.querySelector('#keysBtn');
-const childrenBtn = document.querySelector('#childrenBtn');
 const laptopBtn = document.querySelector('#laptopBtn');
 const carParkBtn = document.querySelector('#carParkBtn');
 const backBtn = document.querySelector('#backBtn');
@@ -38,10 +37,6 @@ const textPatrol = document.querySelector('#textPatrol');
 //Keys
 const keysCon = document.querySelector('#keysCon');
 const dateKeys = document.querySelector('#dateKeys');
-
-//Children
-const childrenCon = document.querySelector('#childrenCon');
-const dateChildren = document.querySelector('#dateChildren');
 
 //Laptop
 const laptopCon = document.querySelector('#laptopCon');
@@ -155,15 +150,6 @@ keysBtn.addEventListener('click', e => {
 });
 
 dateKeys.textContent = dateFormat();
-
-//CHILDREN
-childrenBtn.addEventListener('click', e => {
-  clearScreen();
-  childrenCon.style.display = 'block';
-  backBtn.style.display = 'block';
-});
-
-dateChildren.textContent = dateFormat();
 
 //LAPTOP
 laptopBtn.addEventListener('click', e => {
