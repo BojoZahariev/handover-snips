@@ -136,6 +136,14 @@ textarea {
   margin: auto;
 }
 
+.iconsMainDiv {
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.iconsMain {
+}
+
 .mainBtn {
   width: 180px;
   height: 130px;
