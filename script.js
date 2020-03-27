@@ -1,16 +1,15 @@
 const bigContainer = document.querySelector('#bigContainer');
 const initialDiv = document.querySelector('#initialDiv');
-const handOverBtnDiv = document.querySelector('#handOverBtnDiv');
 const hoBtn = document.querySelector('#hoBtn');
 const patrolBtn = document.querySelector('#patrolBtn');
 const keysBtn = document.querySelector('#keysBtn');
 const laptopBtn = document.querySelector('#laptopBtn');
+const childrenBtn = document.querySelector('#childrenBtn');
 const carParkBtn = document.querySelector('#carParkBtn');
 const backBtn = document.querySelector('#backBtn');
 
 //HANDOVER
 const newBtn = document.querySelector('#newBtn');
-const lastBtn = document.querySelector('#lastBtn');
 const handOverCon = document.querySelector('#handOverCon');
 
 //New
@@ -44,6 +43,9 @@ const dateKeys = document.querySelector('#dateKeys');
 const laptopCon = document.querySelector('#laptopCon');
 const dateLaptop = document.querySelector('#dateLaptop');
 
+//Children
+const childrenCon = document.querySelector('#childrenCon');
+
 //Car Park
 const carParkCon = document.querySelector('#carParkCon');
 const dateCarPark = document.querySelector('#dateCarPark');
@@ -67,12 +69,23 @@ const addZero = i => {
   return i;
 };
 
+const clearScreen = () => {
+  let containers = document.getElementsByClassName('containers');
+  Array.from(containers).forEach(element => {
+    element.style.display = 'none';
+  });
+
+  backBtn.style.display = 'none';
+};
+
 dateHo.textContent = dateFormat();
 
 hoBtn.addEventListener('click', e => {
   clearScreen();
 
-  handOverBtnDiv.style.display = 'flex';
+  handOverCon.style.display = 'block';
+  lastHo.style.display = 'block';
+  newFormHo.style.display = 'none';
   backBtn.style.display = 'block';
 });
 
@@ -89,15 +102,6 @@ backBtn.addEventListener('click', e => {
   clearScreen();
   initialDiv.style.display = 'block';
 });
-
-const clearScreen = () => {
-  let containers = document.getElementsByClassName('containers');
-  Array.from(containers).forEach(element => {
-    element.style.display = 'none';
-  });
-  handOverBtnDiv.style.display = 'none';
-  backBtn.style.display = 'none';
-};
 
 //Display textarea if different radio is pressed
 const displayTextArea = (radios, textDiv) => {
@@ -133,15 +137,6 @@ displayTextArea(radiosCity, textCity);
 const radiosCom = document.getElementsByClassName('radioCom');
 displayTextArea(radiosCom, textCom);
 
-lastBtn.addEventListener('click', e => {
-  clearScreen();
-
-  handOverCon.style.display = 'block';
-  lastHo.style.display = 'block';
-  newFormHo.style.display = 'none';
-  backBtn.style.display = 'block';
-});
-
 //PATROL
 patrolBtn.addEventListener('click', e => {
   clearScreen();
@@ -171,6 +166,15 @@ laptopBtn.addEventListener('click', e => {
 });
 
 dateLaptop.textContent = dateFormat();
+
+//CHILDREN
+childrenBtn.addEventListener('click', e => {
+  clearScreen();
+  childrenCon.style.display = 'block';
+  backBtn.style.display = 'block';
+});
+
+dateChildren.textContent = dateFormat();
 
 //CARPARK
 carParkBtn.addEventListener('click', e => {
