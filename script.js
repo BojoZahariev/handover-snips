@@ -10,6 +10,7 @@ const backBtn = document.querySelector('#backBtn');
 
 //HANDOVER
 const newBtn = document.querySelector('#newBtn');
+const lastBtn = document.querySelector('#lastBtn');
 const handOverCon = document.querySelector('#handOverCon');
 
 //New
@@ -25,9 +26,10 @@ const textIntBars = document.querySelector('#textIntBars');
 const textExtBars = document.querySelector('#textExtBars');
 const textCity = document.querySelector('#textCity');
 const textCom = document.querySelector('#textCom');
-
 const submitBtn = document.querySelector('#formSubmit');
 const input = document.querySelector('#input1');
+//Last
+const lastHo = document.querySelector('#lastHo');
 
 //Patrol
 const patrolCon = document.querySelector('#patrolCon');
@@ -78,6 +80,7 @@ newBtn.addEventListener('click', e => {
   clearScreen();
 
   handOverCon.style.display = 'block';
+  lastHo.style.display = 'none';
   newFormHo.style.display = 'block';
   backBtn.style.display = 'block';
 });
@@ -129,6 +132,15 @@ const radiosCity = document.getElementsByClassName('radioCity');
 displayTextArea(radiosCity, textCity);
 const radiosCom = document.getElementsByClassName('radioCom');
 displayTextArea(radiosCom, textCom);
+
+lastBtn.addEventListener('click', e => {
+  clearScreen();
+
+  handOverCon.style.display = 'block';
+  lastHo.style.display = 'block';
+  newFormHo.style.display = 'none';
+  backBtn.style.display = 'block';
+});
 
 //PATROL
 patrolBtn.addEventListener('click', e => {
